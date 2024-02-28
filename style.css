@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: #3A506B;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    width: fit-content;
+    position: absolute;
+    top: 7.5rem;
+    left: 5rem;
+    font-weight:500 ;
+
+    ::placeholder{
+        font-weight: 600;
+    }
+}
+
+#glass{
+    margin-right: -3.5rem;
+    font-size: 1.5rem;
+}
+
+#search{
+    height: 2rem;
+    width: 12rem;
+    padding-left: 2.25rem;
+    outline: none;
+    border: 1px solid rgba(43, 42, 42, 0.363);
+    box-shadow: 0px 3px 1px 1px rgba(43, 42, 42, 0.363);
+    border-radius:5px ;
+}
+
+.filters,
+.categories,
+.sort{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: #060e25;
+    cursor: pointer;
+    transition: all 250ms linear;
+    padding: 10px 10px;
+    border-radius:10px ;
+
+    >span{
+        font-size: .75rem;
+    }
+    
+    >ion-icon{
+        transition: all 250ms linear;
+        font-size: 1.15rem;
+    }
+    
+}
+
+.active{
+    background-color: #060e25;
+    color: white;
+
+    >ion-icon{
+        transform: rotate(180deg);
+    }
+}
+
+.app-box{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    position: absolute;
+    top: 30rem;
+    left: 30rem;
+    height: 25rem;
+    width: 25rem;
+}
