@@ -61,6 +61,16 @@ body{
     
 }
 
+.checkbox{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    
+    >label{
+        font-size: .75rem;
+    }
+}
+
 .active{
     background-color: #060e25;
     color: white;
@@ -68,6 +78,50 @@ body{
     >ion-icon{
         transform: rotate(180deg);
     }
+}
+
+.sort-options{
+    display: flex;
+    position: absolute;
+    top: 10.5rem;
+    left: 20.5rem;
+}
+
+.sort-options > .options:nth-child(1){
+    margin-right: 8.1rem;
+}
+
+.sort-options > .options:nth-child(2){
+    margin-right:2.25rem;
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: .75rem;
+    visibility: hidden;
+    transition:  all 250ms linear;
+    transform-origin: top;
+    scale: 0;
+
+    >span{
+        padding: 5px;
+        border-radius: 5px;
+    }
+
+    >span:hover{
+        background-color: #3a506b3f;
+        cursor: pointer;
+    }
+}
+
+.active-menu{
+    scale: 1;
+    visibility: visible;
 }
 
 .app-box{
